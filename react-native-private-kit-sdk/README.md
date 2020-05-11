@@ -1,5 +1,8 @@
 # react-native-private-kit-sdk
 
+## Docs
+Dedicated website for documentation coming up soon. Fow now please follow the Usage section.
+
 ## Getting started
 
 `$ npm install react-native-private-kit-sdk --save`
@@ -10,7 +13,7 @@
 
 ## Usage
 ```javascript
-import { BluetoothService, MagnetometerService, LocationService, SampleUI} from 'react-native-private-kit-sdk';
+import { BluetoothService, MagnetometerService, LocationService} from 'react-native-private-kit-sdk';
 
 // For Bluetooth usage
 BluetoothService.init();
