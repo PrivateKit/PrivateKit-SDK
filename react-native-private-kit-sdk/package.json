@@ -2,22 +2,22 @@
   "name": "react-native-private-kit-sdk",
   "title": "React Native Private Kit Sdk",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "A culmination of various privacy preserving contact tracing technology",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-private-kit-sdk.git",
-    "baseUrl": "https://github.com/github_account/react-native-private-kit-sdk"
+    "url": "git+https://github.com/PrivateKit/PrivateKit-SDK.git",
+    "baseUrl": "https://github.com/PrivateKit/PrivateKit-SDK"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Abhishek",
+    "email": "tremblerz@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
@@ -25,16 +25,9 @@
   "peerDependencies": {
     "react": "^16.8.1",
     "react-native": ">=0.60.0-rc.0 <1.0.x",
-    "react-native-sensors": "^5.4.1",
-    "@react-native-community/async-storage": "^1.9.0",
-    "react-native-ble-advertiser": "0.0.14",
-    "react-native-push-notification": "^3.1.9",
-    "@react-native-community/push-notification-ios": "^1.1.0",
-    "@mauron85/react-native-background-geolocation": "^0.6.3"
   },
   "devDependencies": {
     "react": "^16.9.0",
     "react-native": "^0.61.5",
-    "react-native-sensors": "^5.4.1"
   }
 }

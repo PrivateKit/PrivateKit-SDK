@@ -10,8 +10,22 @@
 
 ## Usage
 ```javascript
-import PrivateKitSdk from 'react-native-private-kit-sdk';
+import { BluetoothService, MagnetometerService, LocationService, SampleUI} from 'react-native-private-kit-sdk';
 
-// TODO: What to do with the module?
-PrivateKitSdk;
+// For Bluetooth usage
+BluetoothService.init();
+BluetoothService.requestBluetoothStatus();
+BluetoothService.enableBT();
+BluetoothService.start();
+
+// For Magnetometer usage
+MagnetometerService.start();
+
+// For LocationService usage
+// Check and obtain the permissions first -
+let locationPermission = LocationService.checkLocationPermission()
+if (locationPermission == false) {
+  LocationService.requestLocation();
+}
+LocationService.start();
 ```
