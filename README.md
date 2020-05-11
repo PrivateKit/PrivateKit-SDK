@@ -32,3 +32,15 @@ if (locationPermission == false) {
 }
 LocationService.start();
 ```
+
+## What's Next?
+- [ ] Improved documentation
+- [ ] Standalone libraries for single modalities (ex. - separate Location library, etc)
+- [ ] WiFi
+- [ ] QR Codes
+- [ ] Encrypted and Hashing based set intersections
+- [ ] Compute library (With Tensorflow.js support)
+- [ ] Encrypted storage and authenticated data transfer
+- [ ] Visualization library and Maps integration
+- [ ] Background processing and background task management
+- [ ] Google/Apple Exposure Notification Library with React Native binding
