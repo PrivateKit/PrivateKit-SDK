@@ -10,12 +10,40 @@
 
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
-import { SampleUI, MagnetometerService } from 'react-native-private-kit-sdk';
+import { BluetoothService, MagnetometerService, LocationService, SampleUI} from 'react-native-private-kit-sdk';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+    this.startServices();
+  }
+
+  startBluetoothService() {
+    // Use the permissions check code here
+    BluetoothService.init();
+    BluetoothService.requestBluetoothStatus();
+    BluetoothService.enableBT();
+    BluetoothService.start();
+  }
+
+  startMagnetometerService() {
     MagnetometerService.start();
+  }
+
+  startLocationService() {
+    // Use the permissions check code here
+    let locationPermission = LocationService.checkLocationPermission()
+    if (locationPermission == false) {
+      LocationService.requestLocation();
+    }
+    LocationService.start();
+  }
+
+  startServices() {
+    console.log("start services")
+    this.startBluetoothService();
+    this.startLocationService();
+    this.startMagnetometerService();
   }
 
   render() {

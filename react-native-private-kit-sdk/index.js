@@ -1,7 +1,6 @@
-//import { requireNativeComponent } from 'react-native';
-import SampleUI from './src/ui/SampleUI';
+import BluetoothService from './src/services/BluetoothService';
 import MagnetometerService from './src/services/MagnetometerService';
+import LocationService from './src/services/LocationService';
+import SampleUI from './src/ui/SampleUI';
 
-//const PrivateKitSdk = requireNativeComponent('PrivateKitSdk', null);
-export { SampleUI, MagnetometerService };
-//export default PrivateKitSdk;
+export { BluetoothService, MagnetometerService, LocationService, SampleUI };
